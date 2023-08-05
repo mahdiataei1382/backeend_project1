@@ -11,4 +11,4 @@ before_script:
 test:
   stage: test
   script:
-    - python3 test
+    - python3 roshan/manage.py test
