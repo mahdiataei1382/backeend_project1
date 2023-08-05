@@ -7,7 +7,8 @@ before_script:
   - pip install -r requirements.txt
   - python3 manage.py loaddata roshan/tecnews/db_test.json
 
+
 test:
   stage: test
   script:
-    - python manage.py test
+    - python roshan/manage.py test
