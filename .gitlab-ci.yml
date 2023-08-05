@@ -10,5 +10,7 @@ before_script:
 
 test:
   stage: test
+  before_script:
+    -cd roshan
   script:
-    - python roshan/manage.py test
+    - python manage.py test
