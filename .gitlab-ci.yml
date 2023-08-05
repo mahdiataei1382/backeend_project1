@@ -5,8 +5,8 @@ stages:
 
 before_script:
   - pip install -r requirements.txt
-  - python3 manage.py migrate
-  - python3 manage.py loaddata tecnews/db_test.json
+  - python3 roshan/manage.py migrate
+  - python3 roshan/manage.py loaddata tecnews/db_test.json
 
 test:
   stage: test
