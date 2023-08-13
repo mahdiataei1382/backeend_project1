@@ -1,0 +1,90 @@
+[
+    {
+        "model": "tecnews.Tagmodel",
+        "pk": 1,
+        "fields": {
+            "Name": "tag1"
+        }
+    },
+    {
+        "model": "tecnews.Tagmodel",
+        "pk": 2,
+        "fields": {
+            "Name": "tag2"
+        }
+    },
+    {
+        "model": "tecnews.Tagmodel",
+        "pk": 3,
+        "fields": {
+            "Name": "tag3"
+        }
+    },
+    {
+        "model": "tecnews.Tagmodel",
+        "pk": 4,
+        "fields": {
+            "Name": "tag4"
+        }
+    },
+    {
+        "model": "tecnews.NewModel",
+        "pk": 1,
+        "fields": {
+            "Title": "news1",
+            "Text": "This is news 1",
+            "Source": "http://example.com/news1",
+            "Tags": [1, 2]
+        }
+    },
+    {
+        "model": "tecnews.NewModel",
+        "pk": 2,
+        "fields": {
+            "Title": "news2",
+            "Text": "This is news 2",
+            "Source": "http://example.com/news2",
+            "Tags": [1, 2 , 3]
+        }
+    },
+    {
+        "model": "tecnews.NewModel",
+        "pk": 3,
+        "fields": {
+            "Title": "news3",
+            "Text": "This is news 3",
+            "Source": "http://example.com/news3",
+            "Tags": [2]
+        }
+    },
+    {
+        "model": "tecnews.NewModel",
+        "pk": 4,
+        "fields": {
+            "Title": "news4",
+            "Text": "This is news 4",
+            "Source": "http://example.com/news4",
+            "Tags": [2 , 4]
+        }
+    },
+    {
+        "model": "tecnews.NewModel",
+        "pk": 5,
+        "fields": {
+            "Title": "news5",
+            "Text": "This is news 5",
+            "Source": "http://example.com/news5",
+            "Tags": [1,3 , 4]
+        }
+    },
+    {
+        "model": "tecnews.NewModel",
+        "pk": 6,
+        "fields": {
+            "Title": "news6",
+            "Text": "This is news 6",
+            "Source": "http://example.com/news6",
+            "Tags": [1,3]
+        }
+    }
+]
