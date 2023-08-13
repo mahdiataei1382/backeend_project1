@@ -14,5 +14,7 @@ build:
     - python3 roshan/manage.py loaddata roshan/tecnews/db_test.json
 test:
   stage: test
+  before_script:
+    - pip install -r requirements.txt
   script:
     - python3 roshan/manage.py test
