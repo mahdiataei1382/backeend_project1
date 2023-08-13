@@ -2,12 +2,13 @@ image: python:3.8
 
 stages:
   - test
-
-before_script:
-  - pip install -r requirements.txt
-  - python3 roshan/manage.py migrate
-  - python3 roshan/manage.py loaddata roshan/tecnews/db_test.json
-
+  - build
+build:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    - python3 roshan/manage.py migrate
+    - python3 roshan/manage.py loaddata roshan/tecnews/db_test.json
 test:
   stage: test
   script:
