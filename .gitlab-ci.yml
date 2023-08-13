@@ -3,11 +3,14 @@ image: python:3.8
 stages:
   - build
   - test
+variables:
+  VIRTUAL_ENV: venv
+
+before_script:
+  - python -m venv $VIRTUAL_ENV
+  - source $VIRTUAL_ENV/bin/activate
 build:
   stage: build
-  before_script:
-    - python3 -m venv venv/
-    - source venv/bin/activate
   script:
     - pip install -r requirements.txt
     - python3 roshan/manage.py migrate
