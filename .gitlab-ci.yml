@@ -5,6 +5,9 @@ stages:
   - test
 build:
   stage: build
+  before_script:
+    - python3 -m venv/
+    - source venv/bin/activate
   script:
     - pip install -r requirements.txt
     - python3 roshan/manage.py migrate
